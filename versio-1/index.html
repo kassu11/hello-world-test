@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migraatio tarkistus pt 1</title>
+    <meta name="color-scheme" content="dark light">
+  </head>
+  <body>
+    <h1>Migraatio virheitten ohjauspaneeli</h1>
+    <fieldset>
+      <legend>Mitä virheitä skipataan</legend>
+      <input type="checkbox" name="lueLisää" id="lueLisää" checked>
+      <label for="lueLisää">Lue lisää otsikko puuttuu</label><br>
+      <input type="checkbox" name="päivämäärä" id="päivämäärä" checked>
+      <label for="päivämäärä">Otsikon alla päivämäärä</label><br>
+      <input type="checkbox" name="lopetaVirheestä" id="lopetaVirheestä">
+      <label for="lopetaVirheestä">Lopeta ekasta virheestä</label><br>
+      <input type="checkbox" name="LinkkiOsoite" id="LinkkiOsoite">
+      <label for="LinkkiOsoite">Linkin href kenttä</label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Tutkittavat sivut</legend>
+      <textarea name="" id="sivut" cols="30" rows="10"></textarea>
+    </fieldset>
+    <fieldset>
+      <legend>Aloita migraatio tutkiminen</legend>
+      <button>Tutki</button>
+    </fieldset>
+  </body>
+</html>
+
+<script src="code.js"></script>
