@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Migraatio tarkistus pt 1</title>
     <meta name="color-scheme" content="dark light">
+    <style>
+      body {
+        font-family: helvetica;
+      }
+    </style>
   </head>
   <body>
     <h1>Migraatio virheitten ohjauspaneeli</h1>
@@ -15,10 +20,16 @@
       <label for="lueLisää">Lue lisää otsikko puuttuu</label><br>
       <input type="checkbox" name="päivämäärä" id="päivämäärä" checked>
       <label for="päivämäärä">Otsikon alla päivämäärä</label><br>
-      <input type="checkbox" name="lopetaVirheestä" id="lopetaVirheestä">
-      <label for="lopetaVirheestä">Lopeta ekasta virheestä</label><br>
       <input type="checkbox" name="LinkkiOsoite" id="LinkkiOsoite">
       <label for="LinkkiOsoite">Linkin href kenttä</label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Tarkistus asetukset</legend>
+      <input type="checkbox" name="lopetaVirheestä" id="lopetaVirheestä">
+      <label for="lopetaVirheestä">Lopeta ekasta virheestä</label><br>
+      <input type="checkbox" name="manuaalinenSeuraava" id="manuaalinenSeuraava">
+      <label for="manuaalinenSeuraava">Mene seuraavalla sivulle manuaalisesti [å]</label><br>
     </fieldset>
 
     <fieldset>

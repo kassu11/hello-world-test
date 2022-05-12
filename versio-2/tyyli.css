@@ -2,5 +2,63 @@
   position: relative;
   display: grid;
   grid-template-columns: 300px 1fr 1fr;
-  height: 100%;
+  height: calc(100vh - 110px);
+  overflow: hidden;
+}
+
+body {
+  font-family: helvetica;
+}
+
+summary {
+  margin-bottom: 10px;
+}
+
+details {
+  transition: .2s all;
+  padding: 3px;
+  cursor: pointer;
+}
+details:hover {
+  background-color: #333;
+}
+
+#virhe .container div p {
+  margin: 0px;
+  margin-left: 10px;
+  word-break: break-word;
+}
+
+.elementContainer {
+  position: absolute;
+  grid-column: 2 / -1;
+  overflow: auto;
+  max-height: calc(100% - 35px);
+  top: 25px;
+}
+
+.elementContainer div[container-row-element] {
+  display: grid;
+  margin-left: 10px;
+  gap: 25px;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 10px;
+}
+
+[skip-elem] {
+  background: #870000;
+  opacity: .3;
+}
+
+[skip-elem]:first-child {
+  visibility: hidden;
+}
+
+title.show {
+  display: block;
+  background-color: #870000;
+}
+
+title.show::before {
+  content: "title: ";
 }
