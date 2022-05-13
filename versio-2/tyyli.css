@@ -10,23 +10,25 @@ body {
   font-family: helvetica;
 }
 
+
 summary {
   margin-bottom: 10px;
 }
-
 details {
   transition: .2s all;
   padding: 3px;
   cursor: pointer;
-}
-details:hover {
-  background-color: #333;
 }
 
 #virhe .container div p {
   margin: 0px;
   margin-left: 10px;
   word-break: break-word;
+}
+
+#virhe .container div {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.493);
+  margin-bottom: 10px;
 }
 
 .elementContainer {
@@ -45,9 +47,26 @@ details:hover {
   margin-right: 10px;
 }
 
+[container-row-element] summary {
+  background: #323232;
+  border: 1px solid #727272;
+  padding: 10px;
+}
+
+[container-row-element] summary a {
+  pointer-events: none;
+}
+
 [skip-elem] {
   background: #870000;
   opacity: .3;
+}
+
+[link-list]::before {
+  content: "►";
+  width: 0px;
+  height: 0;
+  color: white; 
 }
 
 [skip-elem]:first-child {
