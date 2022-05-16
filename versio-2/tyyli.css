@@ -13,12 +13,15 @@ body {
 
 summary {
   margin-bottom: 10px;
+  cursor: pointer;
 }
 details {
   transition: .2s all;
   padding: 3px;
-  cursor: pointer;
 }
+
+#tuotanto {margin-right: 12px}
+#beta {margin-left: -8px}
 
 #virhe .container div p {
   margin: 0px;
@@ -29,7 +32,13 @@ details {
 #virhe .container div {
   border-bottom: 1px solid rgba(255, 255, 255, 0.493);
   margin-bottom: 10px;
+  cursor: pointer;
+  transition: all .2s;
 }
+#virhe .container div:hover {
+  background-color: #282828;
+}
+
 
 .elementContainer {
   position: absolute;
@@ -37,6 +46,7 @@ details {
   overflow: auto;
   max-height: calc(100% - 35px);
   top: 25px;
+  width: 100%;
 }
 
 .elementContainer div[container-row-element] {
@@ -80,4 +90,18 @@ title.show {
 
 title.show::before {
   content: "title: ";
+}
+
+.cta {
+  background: #282828;
+  border-left: 3px solid #004cb9;
+  margin-left: 50px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+.cta > a:last-of-type {
+  padding: 5px;
+  background: #0f73a9;
+  color: white;
+  text-decoration: none;
 }
