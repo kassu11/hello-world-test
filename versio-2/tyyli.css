@@ -92,16 +92,23 @@ title.show::before {
   content: "title: ";
 }
 
-.cta {
+cta {
   background: #282828;
   border-left: 3px solid #004cb9;
   margin-left: 50px;
   padding-left: 10px;
   padding-bottom: 15px;
+  margin-bottom: 10px;
 }
-.cta > a:last-of-type {
+cta > a:last-of-type {
   padding: 5px;
   background: #0f73a9;
   color: white;
   text-decoration: none;
+}
+
+huomio {
+  border: 6px solid #ff0000;
+  padding: 10px;
+  background: #232323;
 }
