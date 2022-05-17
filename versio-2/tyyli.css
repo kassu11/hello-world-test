@@ -20,18 +20,24 @@ details {
   padding: 3px;
 }
 
+#virhe details[open] summary {
+  box-shadow: -5px 0 #565656;
+  padding-left: 5px;
+  background: #1d1d1d;
+}
+
 #tuotanto {margin-right: 12px}
 #beta {margin-left: -8px}
 
 #virhe .container div p {
   margin: 0px;
-  margin-left: 10px;
   word-break: break-word;
 }
 
 #virhe .container div {
   border-bottom: 1px solid rgba(255, 255, 255, 0.493);
   margin-bottom: 10px;
+  margin-left: 10px;
   cursor: pointer;
   transition: all .2s;
 }
