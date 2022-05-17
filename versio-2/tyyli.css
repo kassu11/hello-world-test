@@ -83,6 +83,12 @@ details {
   visibility: hidden;
 }
 
+[virhe-flag] {
+  position: relative;
+  background: #85000087;
+  box-shadow: -3px 0 red;
+}
+
 title.show {
   display: block;
   background-color: #870000;
