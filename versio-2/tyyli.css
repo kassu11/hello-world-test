@@ -119,8 +119,36 @@ cta > a:last-of-type {
   text-decoration: none;
 }
 
-huomio {
-  border: 6px solid #ff0000;
-  padding: 10px;
+huomio, esimerkki {
+  border: 1px solid #929292;
+  padding: 0px 10px;
   background: #232323;
+}
+
+huomio > :first-child::before {
+  content: "!";
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  color: red;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid red;
+  margin-right: 5px;
+}
+
+esimerkki > :first-child::before {
+  content: "💡";
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  color: yellow;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid yellow;
+  margin-right: 5px;
 }
