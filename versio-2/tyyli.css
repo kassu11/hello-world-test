@@ -57,10 +57,37 @@ details {
 
 .elementContainer div[container-row-element] {
   display: grid;
-  margin-left: 10px;
-  gap: 25px;
+  gap: 5px;
   grid-template-columns: 1fr 1fr;
-  margin-right: 10px;
+}
+
+.elementContainer div[container-row-element]:last-child {
+  margin-bottom: 10px;
+}
+
+.elementContainer .container ul {
+  counter-set: bullet;
+}
+.elementContainer .container li::before {
+  counter-increment: bullet;
+  content: counter(bullet);
+  position: absolute;
+  transform: translateX(-16px);
+  opacity: 0;
+}
+.elementContainer .container li:hover::before {
+  content: counter(bullet);
+  opacity: 1;
+}
+.elementContainer .container li:hover::marker {
+  color: transparent;
+}
+
+div[container-row-element] .container {
+  position: relative;
+  overflow: auto;
+  display: grid;
+  padding-inline: 10px;
 }
 
 [container-row-element] summary {
@@ -85,7 +112,7 @@ details {
   color: white; 
 }
 
-[skip-elem]:first-child {
+.container.tuotanto [skip-elem] {
   visibility: hidden;
 }
 
@@ -93,6 +120,9 @@ details {
   position: relative;
   background: #85000087;
   box-shadow: -3px 0 red;
+}
+[linkki-virhe-flag] {
+  color: red;
 }
 
 title.show {
