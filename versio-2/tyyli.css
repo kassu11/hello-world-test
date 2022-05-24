@@ -20,6 +20,26 @@ details {
   padding: 3px;
 }
 
+#virheMaara {
+  position: absolute;
+  margin-top: -23px;
+}
+
+.scrollFocus {
+  animation: .4s scrollFocus;
+}
+
+@keyframes scrollFocus {
+  0% {
+    background-color: rgba(255, 255, 0, 0.574);
+    box-shadow: -3px 0 yellow;
+    /* transform: translateX(50px); */
+  } 100% {
+    /* filter: brightness(1); */
+    /* transform: translateX(0px); */
+  }
+}
+
 #virhe details[open] summary {
   box-shadow: -5px 0 #565656;
   padding-left: 5px;
