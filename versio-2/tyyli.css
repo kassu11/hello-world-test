@@ -40,6 +40,17 @@ details {
   }
 }
 
+#virhe {
+  position: relative;
+  overflow: hidden;
+}
+
+#virhe .container {
+  overflow: auto;
+  position: relative;
+  height: 100%;
+}
+
 #virhe details[open] summary {
   box-shadow: -5px 0 #565656;
   padding-left: 5px;
