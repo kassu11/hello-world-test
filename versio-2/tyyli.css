@@ -246,3 +246,23 @@ pikaopas[asiakas] legend {margin-left: auto}
 pikaopas[muu] legend {
   margin-inline: auto;
 }
+
+.etuustarjotin {
+  display: flex;
+  gap: 10px;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.etuustarjotin h3 {
+  border-bottom: 2px solid #fdb916;
+  margin-inline: 5px;
+}
+
+.etuustarjotin p {
+  margin-top: 0px;
+}
+
+.etuustarjotin :is(p, h3, a) {
+  word-break: break-word;
+}

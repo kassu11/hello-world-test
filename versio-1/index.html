@@ -10,33 +10,43 @@
       body {
         font-family: helvetica;
       }
+
+      i {
+        color: #4ea7ff;
+      }
     </style>
   </head>
   <body>
     <h1>Migraatio virheitten ohjauspaneeli</h1>
     <fieldset>
-      <legend>Mitä virheitä skipataan</legend>
+      <legend>Virheisiin liittyvät asetukset</legend>
       <input type="checkbox" name="lueLisää" id="lueLisää" checked>
-      <label for="lueLisää">Lue lisää otsikko puuttuu</label><br>
+      <label for="lueLisää">Älä tarkista sivun <b>lue lisää otsikkoa</b></label><br>
       <input type="checkbox" name="päivämäärä" id="päivämäärä" checked>
-      <label for="päivämäärä">Otsikon alla päivämäärä</label><br>
-      <input type="checkbox" name="LinkkiOsoite" id="LinkkiOsoite">
-      <label for="LinkkiOsoite">Älä tarkista linkin osoitetta</label><br>
+      <label for="päivämäärä">Poista tarkistuksesta otsikon alla oleva <b>päivämäärä</b></label><br>
       <input type="checkbox" name="ctaPaikka" id="ctaPaikka" checked>
       <label for="ctaPaikka">Älä välitä cta-laatikoitten paikasta</label><br>
+      <input type="checkbox" name="LinkkiOsoite" id="LinkkiOsoite">
+      <label for="LinkkiOsoite">Älä tarkista linkin osoitteita <i><b>(Beta poistaa linkeistä en, sv, fi kieliparametrit)</b></i></label><br>
       <input type="checkbox" name="htmlTitle" id="htmlTitle">
       <label for="htmlTitle">Älä tarkista sivun html titlen eroa <i><b>(Beta sivun html title ei lataudu, jos sivu ei ole aktiivinen)</b></i></label><br>
     </fieldset>
 
     <fieldset>
-      <legend>Tarkistus asetukset</legend>
+      <legend>Tarkistukseen liittyvät asetukset</legend>
+      <input type="checkbox" name="montaIkkunaa" id="montaIkkunaa">
+      <label for="montaIkkunaa">Nopeuta hakua</label>
+      <input type="number" name="montaIkkunaaMaara" id="montaIkkunaaMaara" placeholder="2" min="2" style="width: 50px;" disabled><br>
+      <input type="checkbox" name="tyhjennaMuisti" id="tyhjennaMuisti" checked>
+      <label for="tyhjennaMuisti">Tyhjennä muisti</label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Bugien korjaus asetukset</legend>
       <input type="checkbox" name="lopetaVirheestä" id="lopetaVirheestä">
       <label for="lopetaVirheestä">Lopeta ekasta virheestä</label><br>
       <input type="checkbox" name="manuaalinenSeuraava" id="manuaalinenSeuraava">
       <label for="manuaalinenSeuraava">Mene seuraavalla sivulle manuaalisesti [å]</label><br>
-      <input type="checkbox" name="montaIkkunaa" id="montaIkkunaa">
-      <label for="montaIkkunaa">Nopeuta hakua</label>
-      <input type="number" name="montaIkkunaaMaara" id="montaIkkunaaMaara" placeholder="2" min="2" style="width: 50px;" disabled>
     </fieldset>
 
     <fieldset>
