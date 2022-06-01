@@ -40,6 +40,33 @@ details {
   }
 }
 
+#linkHover {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+.hoverContainer {
+  position: absolute;
+  background-color: #454545;
+  padding: 10px;
+}
+.hoverContainer p {
+  margin: 0px;
+  font-weight: 700;
+}
+
+.hoverContainer span {
+  float: right;
+  padding-left: 5px;
+  font-weight: 100;
+  color: #8489ff;
+}
+
+
 #virhe {
   position: relative;
   overflow: hidden;
@@ -256,7 +283,6 @@ pikaopas[muu] legend {
 
 .etuustarjotin h3 {
   border-bottom: 2px solid #fdb916;
-  margin-inline: 5px;
 }
 
 .etuustarjotin p {
