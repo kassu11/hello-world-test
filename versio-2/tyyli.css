@@ -186,7 +186,6 @@ div[container-row-element] .container {
 
 title.show {
   display: block;
-  background-color: #870000;
 }
 
 title.show::before {
