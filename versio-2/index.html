@@ -5,16 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Migraation raportti sivu</title>
-    <meta name="color-scheme" content="dark">
+    <!-- <meta name="color-scheme" content="dark"> -->
     <link rel="stylesheet" href="tyyli.css">
+    <link rel="stylesheet" href="./css/tyyli.css">
   </head>
   <body>
-    <h1>Migraatio virheitten raportti</h1>
-
-    <div id="virheMaara"></div>
     <div id="linkHover"></div>
 
-    <fieldset class="mainContainer">
+    <div class="mainContainer"> 
+      <div id="leftSideBar">
+        <div class="topHeader">
+          <button id="collapseSites">Tiivistetty</button>
+          <button id="openSites">Kaikki</button>
+          <input type="text" placeholder="Search" id="search">
+          <div class="sivujenMaara">
+            <p>Sivujen määrä: <strong>0</strong></p>
+          </div>
+        </div>
+        <div class="sivut"></div>
+      </div>
+  
+      <div class="tuotantoBG">
+        <div class="header">
+          <a class="title" href="">Tuotanto</a>
+        </div>
+      </div>
+      <div class="betaBG">
+        <div class="header">
+          <a class="title" href="">Beta</a>
+          <div id="virheMaarat"></div>
+        </div>
+      </div>
+
+      <div id="elementContainer"></div>
+    </div>
+
+
+    <!-- <fieldset class="mainContainer">
       <legend>Tulokset</legend>
 
       <fieldset id="virhe">
@@ -30,7 +57,7 @@
         <div class="container"></div>
       </fieldset>
       <div class="elementContainer"></div>
-    </fieldset>
+    </fieldset> -->
   </body>
 </html>
 
