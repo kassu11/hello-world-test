@@ -373,6 +373,7 @@ h1 {
 				margin-bottom: 15px;
 				position: relative;
 				display: block;
+				padding-bottom: 10px;
 
 				> :first-child::before {
 					display: inline-block;
@@ -451,7 +452,6 @@ h1 {
 			}
 			[virhe-flag] {
 				position: relative;
-				text-shadow: 0 0 3px #000;
 				background: linear-gradient(270deg, #ff000094, #770000ad);
 				box-shadow: -3px 0 red;
 
